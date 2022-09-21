@@ -40,9 +40,11 @@ jobs:
               run: |
                   eb init --platform node.js --region us-east-2
                   eb create --sample pr3c10us
-                  
+
             - name: Deploy to Elastic Beanstalk
               run: |
-                git add .
-                git commit -m "Deploy to Elastic Beanstalk"
-                eb deploy 
+                  git config --global user.email "owo.pre.eno@gmail.com"
+                  git config --global user.name "pr3c10us"
+                  git add .
+                  git commit -m "Deploy to Elastic Beanstalk"
+                  eb deploy
