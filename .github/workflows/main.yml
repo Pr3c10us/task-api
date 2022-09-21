@@ -44,7 +44,7 @@ jobs:
             - name: Deploy to Elastic Beanstalk
               run: |
                   git config --global user.email "owo.pre.eno@gmail.com"
-                  git config --global user.name "pr3c10us"
+                  git config --global user.name "pr3c10us-app"
                   git add .
                   git commit -m "Deploy to Elastic Beanstalk"
                   eb deploy
