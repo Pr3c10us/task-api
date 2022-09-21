@@ -39,7 +39,7 @@ jobs:
             - name: Deploy to Elastic Beanstalk
               run: |
                   eb init --platform node.js --region us-east-2
-                  eb create --sample task-api-pr3c10us
+                  eb create --sample pr3c10us
                   
             - name: Deploy to Elastic Beanstalk
               run: |
